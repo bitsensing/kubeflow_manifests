@@ -141,6 +141,10 @@ spawnerFormDefaults:
       vendors:
       - limitsKey: "nvidia.com/gpu"
         uiName: "NVIDIA"
+      - limitsKey: "nvidia.com/mig-2g.20gb"
+        uiName: "NVIDIA MIG - 2g.20gb"
+      - limitsKey: "nvidia.com/mig-1g.10gb"
+        uiName: "NVIDIA MIG - 1g.10gb"
       - limitsKey: "amd.com/gpu"
         uiName: "AMD"
       # Values: "" or a `limits-key` from the vendors list
