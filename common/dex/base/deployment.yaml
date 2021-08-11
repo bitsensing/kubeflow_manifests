@@ -25,6 +25,11 @@ spec:
         volumeMounts:
         - name: config
           mountPath: /etc/dex/cfg
+        env:
+        - name: KUBERNETES_POD_NAMESPACE
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.namespace
         envFrom:
           - secretRef:
               name: dex-oidc-client
